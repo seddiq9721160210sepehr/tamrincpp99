@@ -1,0 +1,21 @@
+#include<stdio.h>
+struct mosalas{ int erteefa;   int ghaede;};
+struct dayere{ int shoa; } ;struct mostatil{    int tol;    int arz;} ;
+void masahat_mosalas(mosalas);void masahat_dayere(dayere);void masahat_mostatil(mostatil);
+int main(){   int x;///tol mostatil
+    int y;///arz mostatil
+    mostatil m1;
+    printf("tol va arz mostatil ra vared konid");
+    scanf("%d",&m1.x);    scanf("%d",&m1.y);   masahat_mostatil(m1);
+    return 0;
+}
+void masahat_mosalas(mostatil km){ int masahat;
+    masahat=(km.x * km.y)/2;
+    printf("masahat :%d", masahat);
+}
+void masahat_dayere(dayere dm){float masahat; masahat= dm.x * dm.x * 3.14;
+    printf("masahat :%d", masahat);
+}
+void masahat_mostatil(mostatil mk){int masahat;    masahat = mk.x * mk.y;
+    printf("masahat :%d",masahat);
+}
